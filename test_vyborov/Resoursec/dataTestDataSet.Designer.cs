@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace test_vyborov {
+namespace test_vyborov.Resoursec {
     
     
     /// <summary>
@@ -585,7 +585,7 @@ namespace test_vyborov {
         }
     }
 }
-namespace test_vyborov.dataTestDataSetTableAdapters {
+namespace test_vyborov.Resoursec.dataTestDataSetTableAdapters {
     
     
     /// <summary>

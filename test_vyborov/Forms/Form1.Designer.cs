@@ -42,14 +42,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.workBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTestDataSet = new test_vyborov.dataTestDataSet();
-            this.workTableAdapter = new test_vyborov.dataTestDataSetTableAdapters.workTableAdapter();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTestDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -163,20 +160,6 @@
             this.comboBox1.TabIndex = 10;
             this.comboBox1.ValueMember = "id";
             // 
-            // workBindingSource
-            // 
-            this.workBindingSource.DataMember = "work";
-            this.workBindingSource.DataSource = this.dataTestDataSet;
-            // 
-            // dataTestDataSet
-            // 
-            this.dataTestDataSet.DataSetName = "dataTestDataSet";
-            this.dataTestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // workTableAdapter
-            // 
-            this.workTableAdapter.ClearBeforeFill = true;
-            // 
             // comboBox2
             // 
             this.comboBox2.DataSource = this.workBindingSource;
@@ -232,7 +215,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTestDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -253,9 +235,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private dataTestDataSet dataTestDataSet;
         private System.Windows.Forms.BindingSource workBindingSource;
-        private dataTestDataSetTableAdapters.workTableAdapter workTableAdapter;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using test_vyborov.Class;
+using test_vyborov.Resoursec;
 
 namespace test_vyborov
 {
@@ -31,7 +32,6 @@ namespace test_vyborov
         // создание события при загрузке формы
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.workTableAdapter.Fill(this.dataTestDataSet.work); // метод заполнения combobox из базы данных
             try // обработка исключений
             {
                 str.Open(); // открытие соединения с базой данных
